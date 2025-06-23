@@ -62,13 +62,17 @@
         top: 0;
         left: 0;
         right: 0;
-        height: 60px;
-        padding-top: 10px;
         background: rgba(255, 255, 255, 0.95);
         backdrop-filter: blur(10px);
         z-index: 1000;
         transition: var(--transition);
         box-shadow: var(--shadow);
+      }
+      @media (max-width: 488px) {
+        .header {
+          height: 60px;
+          padding-top: 10px;
+        }
       }
 
       .nav {
